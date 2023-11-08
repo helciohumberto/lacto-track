@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>LeiteFácil</title>
+</head>
+<body>
+  <div id="box-container">
+    <div id="header-box">
+      <img class="logo" src="dairy-cow-png-image.png" alt="Logo Vaca Leiteira">
+      <h1>LactoTrack</h1>
+      <h2>Faturamento</h2>
+    </div>
+    <form class="form-container">
+      <p>Número de vacas no rebanho: <br>
+        <input type="number" id="inNVR" min="">
+      </p>
+      <p>Produção média de leite por vaca dia <br> (em litros): <br>
+        <input type="number" id="inPML" step="0.01" min="0" required>
+      </p>
+      <p>Preço do leite por litro R$: <br>
+        <input type="number" id="inPLL" step="0.01" min="0" required>
+      </p>
+      <p>Número de dias no mês: <br>
+        <input type="number" id="inNDM" min="0" required>
+      </p>
+      <h2>Despesa Custo</h2>
+      <p>Alimentação R$: <br>
+        <input type="number" id="in1" step="0.01" min="0">
+      </p>
+      <p>Veterinários R$: <br>
+        <input type="number" id="in2" step="0.01" min="0" >
+      </p>
+      <p>Mão de Obra R$: <br>
+        <input type="number" id="in3" step="0.01" min="0" >
+      </p>
+      <p>Instalações e Manutenção R$: <br>
+        <input type="number" id="in4" min="0" >
+      </p>
+      <p>Outros Custos R$: <br>
+        <input type="number" id="in5" min="0" >
+      </p> <br>
+      <input class="input-limpa" type="reset" value="Limpar Campos">
+      <input class="input-calcula" type="submit" value="Calcular">
+    </form> <br>
+    <h2>Resultados</h2>
+    <h3 id="resp1"></h3>
+    <h3 id="resp2"></h3>
+    <h3 id="resp3"></h3>
+    <h3 id="resp4"></h3>
+    <div class="rodape">
+      <p>Desenvolvido por Hélcio Humberto</p>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
