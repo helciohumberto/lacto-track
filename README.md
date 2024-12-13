@@ -50,7 +50,7 @@ Um projeto em JavaScript puro com HTML e CSS que permite calcular a quantidade m
 .
 ├── index.html        # Página principal
 ├── style.css         # Estilo da página
-└── script.js         # Lógica do cálculo
+└── app.js         # Lógica do cálculo
 ```
 
 ## Melhorias Futuras
